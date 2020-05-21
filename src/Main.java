@@ -94,7 +94,7 @@ public class Main {
         public String getNextString() {
 
             Random rand = new Random();
-            int randIdx = rand.nextInt(1000);
+            int randIdx = rand.nextInt(1000000);
             if (distributionList == null || stringList == null || distributionList.size() == 0)
                 return "Error";
 

@@ -1,0 +1,19 @@
+Assumptions -
+
+1. Strings will not have "," char in them.
+2. At max 3 digit precision in probabilities.
+
+
+Algorithm -
+
+1. Convert probabilities to Integer by multiplying by a common factor.
+
+example - prob [0.4,0.36,0.9], string =["a","b","c"]
+ ==> multiply by 100 ==> [40,36,9]
+
+Then create an array list and add idx value the probabilities number of times times.
+
+Like for above example - [0,0,0,0,0,......0(40 times),1,1,1,..1(36 times),2,2,2...2(9 times) ] (this has the same
+distribution as of the original probabilities)
+
+Then find a random number between (0, len(arr)-1) and use the value at this index as the index of the string array

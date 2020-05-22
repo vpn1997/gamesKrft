@@ -6,7 +6,7 @@ Assumptions -
 
 Algorithm -
 
-1. Convert probabilities to Integer by multiplying by a common factor.
+1. Convert probabilities to Integer by multiplying by a common multiplier.
 
 example - prob [0.4,0.36,0.9], string =["a","b","c"]
  ==> multiply by 100 ==> [40,36,9]

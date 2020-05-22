@@ -64,7 +64,7 @@ public class Main {
                         continue;
                     strings.add(values[0]);
                     Double d = Double.parseDouble(values[values.length - 1]);
-                    d = Math.round(d * 100.0) / 100.0;
+                    d = Math.round(d * 1000.0) / 1000.0;  // Rounding off to three digits
                     String text = Double.toString(Math.abs(d));
                     int integerPlaces = text.indexOf('.');
                     int decimalPlaces = text.length() - integerPlaces - 1;
